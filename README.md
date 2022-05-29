@@ -5,7 +5,7 @@
 ### Initialize Blockchain
 #### Open cmd and run `set NODE_ID=3000` to set up host 3000 for node, you also 
 #### Run `go run main.go createwallet` to create wallet for each host created
-#### Run `go run main.go createblockchain` to create new blockchain with first address
+#### Run `go run main.go createblockchain -address {address}` to create new blockchain with first address
 #### Run `cd tmp` to move to tmp folder
 #### Run `xcopy blocks_3000\ blocks_{NODE_ID} /E/H` to copy the block in first block to 
 #### Run `xcopy blocks_3000\ blocks_gen /E/H` to copy block to blocks_gen which
