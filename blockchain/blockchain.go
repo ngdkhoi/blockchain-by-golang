@@ -21,8 +21,8 @@ const (
 )
 
 type BlockChain struct {
-	LastHash []byte
-	Database *badger.DB
+	LastHash []byte     //contain last hash of the last block in chain
+	Database *badger.DB //pointer to badger database
 }
 
 func DBexists(path string) bool {

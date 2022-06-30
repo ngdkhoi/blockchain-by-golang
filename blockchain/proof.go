@@ -24,8 +24,8 @@ import (
 const Difficulty = 12
 
 type ProofOfWork struct {
-	Block  *Block
-	Target *big.Int
+	Block  *Block   //Block inside blockchain
+	Target *big.Int //a number represent the requirement  which get derived from difficult
 }
 
 func NewProof(b *Block) *ProofOfWork {

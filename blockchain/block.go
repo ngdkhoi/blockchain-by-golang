@@ -8,12 +8,12 @@ import (
 )
 
 type Block struct {
-	Timestamp    int64
-	Hash         []byte
-	Transactions []*Transaction
-	PrevHash     []byte
-	Nonce        int
-	Height       int
+	Timestamp    int64          //present the time the block was generated.
+	Hash         []byte         //present hash of this block
+	Transactions []*Transaction //present list of transaction in block
+	PrevHash     []byte         //present hash of previous block
+	Nonce        int            //a counter (nonce) which starts at 0
+	Height       int            //index of block in chain
 }
 
 func (b *Block) HashTransactions() []byte {
